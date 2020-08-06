@@ -113,9 +113,10 @@ body
 
 .rocket
     position: absolute
-    top: 150px
+    top: 200px
     right: 0
     z-index: 99
+    max-width: 340px
 
 .footer
     padding: 100px 0 50px 0
@@ -138,7 +139,8 @@ body
     line-height: 21px
     color: $color_gray
     text-decoration: none
-    margin-bottom: 30px
+    margin-bottom: 64px
+    margin-top: 0
 
 .footer-mail
     font-weight: normal
@@ -162,3 +164,59 @@ body
     box-sizing: border-box
     border-radius: 6px
 
+@media screen and (max-width: 960px)
+    .rocket
+        max-width: 240px
+        top: 700px
+    .table-column
+        width: 200px
+    .fatures-text
+        max-width: 400px
+    .footer
+        padding-top: 0
+
+@media screen and (max-width: 768px)
+    .header
+        flex-direction: column
+        align-items: center
+        .logo
+            margin-bottom: 20px
+        .main-nav
+            margin-bottom: 20px
+    .rocket
+        max-width: 200px
+        top: 850px
+    .table-column
+        width: 180px
+    .features
+        padding-bottom: 0
+    .fatures-text
+        max-width: 350px
+
+@media screen and (max-width: 576px)
+    .main
+        padding-top: 50px
+    .rocket
+        position: static
+        top: 0
+        margin-bottom: 30px
+    .table
+        margin-bottom: 10px
+    .table-column
+        font-size: 16px
+        width: 180px
+    .video
+        width: 100% 
+    .features
+        padding-bottom: 50px
+    .footer-nav
+        .list
+           flex-wrap: wrap 
+           align-items: center
+           justify-content: center
+        .item
+            margin-bottom: 10px
+    .footer
+        text-align: center
+    .features-title
+        margin-bottom: 20px

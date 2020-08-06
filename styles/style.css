@@ -125,9 +125,10 @@ body {
 
 .rocket {
   position: absolute;
-  top: 150px;
+  top: 200px;
   right: 0;
   z-index: 99;
+  max-width: 340px;
 }
 
 .footer {
@@ -164,7 +165,8 @@ body {
   line-height: 21px;
   color: #808080;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 64px;
+  margin-top: 0;
 }
 
 .footer-mail {
@@ -196,5 +198,95 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 960px) {
+  .rocket {
+    max-width: 240px;
+    top: 700px;
+  }
+  .table-column {
+    width: 200px;
+  }
+  .fatures-text {
+    max-width: 400px;
+  }
+  .footer {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .logo {
+    margin-bottom: 20px;
+  }
+  .header .main-nav {
+    margin-bottom: 20px;
+  }
+  .rocket {
+    max-width: 200px;
+    top: 850px;
+  }
+  .table-column {
+    width: 180px;
+  }
+  .features {
+    padding-bottom: 0;
+  }
+  .fatures-text {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    padding-top: 50px;
+  }
+  .rocket {
+    position: static;
+    top: 0;
+    margin-bottom: 30px;
+  }
+  .table {
+    margin-bottom: 10px;
+  }
+  .table-column {
+    font-size: 16px;
+    width: 180px;
+  }
+  .video {
+    width: 100%;
+  }
+  .features {
+    padding-bottom: 50px;
+  }
+  .footer-nav .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-nav .item {
+    margin-bottom: 10px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .features-title {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
